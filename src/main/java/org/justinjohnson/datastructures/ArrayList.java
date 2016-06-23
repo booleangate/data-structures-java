@@ -1,6 +1,5 @@
 package org.justinjohnson.datastructures;
 
-import java.lang.reflect.Array;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
@@ -352,7 +351,7 @@ public class ArrayList<E> implements List<E> {
 
 	@SuppressWarnings("unchecked")
 	private E[] newArray(final int capacity) {
-		return (E[]) Array.newInstance(this.getClass(), capacity);
+		return (E[])new Object[capacity];
 	}
 
 	private int newCapacity(final int size) {
