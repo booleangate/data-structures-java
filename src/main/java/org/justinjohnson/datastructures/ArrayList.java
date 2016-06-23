@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.ListIterator;
 
 public class ArrayList<E> implements List<E> {
-	public static class ArrayListIterator<E> implements ListIterator<E>, Iterator<E> {
+	public static class ArrayListIterator<E> implements ListIterator<E> {
 		private int index = 0;
 		private final ArrayList<E> array;
 		
