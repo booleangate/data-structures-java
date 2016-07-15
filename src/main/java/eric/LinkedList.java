@@ -73,6 +73,7 @@ public class LinkedList {
     }
     
     public void delete(int index) {
+    	// TODO: add bounds check
         // Tests and deletion for a list with only one value
         if (size == 1) {
                 first.value = null;
